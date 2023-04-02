@@ -1,0 +1,150 @@
+.banner {
+    position: relative;
+}
+
+.banner__imagen {
+    width: 100%;
+    height: calc(100vh - 72px);
+}
+
+.banner__titulo {
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    font-size: 5.0625rem;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.sobre {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2.5rem;
+}
+
+.sobre__titulo {
+    color: #DA2B1F;
+    font-family: Pacifico, cursive;
+    font-size: 3.1875rem;
+}
+
+.sobre__descripcion {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.75rem;
+    text-align: center;
+    color: #8C8888;
+}
+
+.recetas {
+    background-color: #dab997;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 0 0 5rem;
+}
+
+.receta {
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    width: calc(33% - 5rem);
+    border-radius: 10px;
+    box-shadow: 5px 4px 15px #8C8888;
+}
+
+.receta__imagen {
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.receta__titulo {
+    font-size: 1.4375rem;
+}
+
+.receta__descripcion {
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.receta__contenido {
+    padding: 1rem;
+}
+
+.receta__boton {
+    background-color: #DA2B1F;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    transition: all .1s ease-in-out;
+}
+
+.receta__boton:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.quienes {
+   text-align: center;
+    padding: 5rem;
+}
+
+.quienes__titulo {
+    color: #DA2B1F;
+    font-family: Pacifico, cursive;
+    font-size: 3.0625rem;
+    text-align: center;
+    width: 100%;
+}
+
+.quienes__descripcion {
+    color: #8C8888;
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.personas {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.persona {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 0) {
+    .cabecera {
+        padding: 0 1rem;
+        justify-content: center;
+    }
+    .logo {
+        display: none;
+    }
+
+    .banner__titulo {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecera {
+        padding: 0 5rem;
+        justify-content: space-between
+    }
+    .logo {
+        display: block;
+    }
+
+    .banner__titulo {
+        font-size: 5.0625rem;
+    }
+}
